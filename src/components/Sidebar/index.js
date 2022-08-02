@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
     faLinkedin,
     faGithub,
-    faWhatsapp,
+    faInstagram,
 } from '@fortawesome/free-brands-svg-icons'
 import { faHome, faUser, faEnvelope, faSuitcase } from '@fortawesome/free-solid-svg-icons'
 import { Link, NavLink } from 'react-router-dom'
@@ -24,9 +24,9 @@ const Sidebar = () => {
                 <NavLink activeclassname="active" className="about-link" to="/about">
                     <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
                 </NavLink>
-                <NavLink activeclassname="active" className="portfolio-link" to="/portfolio">
+                {/* <NavLink activeclassname="active" className="portfolio-link" to="/portfolio">
                     <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
-                </NavLink>
+                </NavLink> */}
                 <NavLink
                     activeclassname="active"
                     className="contact-link"
@@ -38,7 +38,7 @@ const Sidebar = () => {
             <ul>
                 <li>
                     <a
-                        href="https://github.com/AugustoDiaz-Dev"
+                        href="https://www.linkedin.com/in/augusto-diaz-dev/"
                         target="_blank"
                         rel="noreferrer"
                     >
@@ -54,20 +54,20 @@ const Sidebar = () => {
                         <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
                     </a>
                 </li>
-                {/* <li>
+                <li>
                     <a
-                        href="https://github.com/AugustoDiaz-Dev"
+                        href="https://www.instagram.com/augustordiaz/"
                         rel="noreferrer"
                         target="_blank"
                     >
-                        <FontAwesomeIcon icon={faYoutube} color="#4d4d4e" />
+                        <FontAwesomeIcon icon={faInstagram} color="#4d4d4e" />
                     </a>
-                </li> */}
-                <li>
+                </li>
+                {/* <li>
                     <a href="skype:live:augustordiaz" rel="noreferrer" target="_blank">
                         <FontAwesomeIcon icon={faWhatsapp} color="#4d4d4e" />
                     </a>
-                </li>
+                </li> */}
             </ul>
         </div>
     )
