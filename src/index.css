@@ -1,19 +1,30 @@
-html {
-  font-size: 62.5%;
+/* Color Palette */
+:root {
+  --myDarkBlue: #115173;
+  --myGreen: #0da91d;
+  --myGrey: #444;
+  --myDarkGrey: #8d8d8d;
+  --myWhite: #fff;
+  --myBlack: #202124;
+  --myBackground: #022c43;
 }
 
 body {
   margin: 0;
   font: 300 11px/1.4 'Helvetica Neue', sans-serif;
-  color: #444;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #022c43;
+  background: var(--myBackground);
+  color: var(--myGrey);
   overflow: hidden;
   display: block;
 }
-
-.dashboard {
+html {
+  scroll-behaviour: smooth;
+  height: 100vh;
+}
+/* Dashboard */
+/* .dashboard {
   margin-top: 200px;
   margin-left: 200px;
-}
+} */

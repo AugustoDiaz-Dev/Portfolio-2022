@@ -9,7 +9,7 @@
     }
 
     h1 {
-        color: #fff;
+        color: var(--myWhite);
         font-size: 56px;
         line-height: 53px;
         margin: 0;
@@ -19,7 +19,7 @@
         &:before {
             content: '<h1>';
             font-family: 'La Belle Aurore', cursive;
-            color: #0DA91D;
+            color: var(--myGreen);
             font-size: 18px;
             position: absolute;
             margin-top: -40px;
@@ -30,7 +30,7 @@
         &:after {
             content: '<h1/>';
             font-family: 'La Belle Aurore', cursive;
-            color: #0DA91D;
+            color: var(--myGreen);
             font-size: 18px;
             position: absolute;
             margin-top: 18px;
@@ -50,32 +50,40 @@
     }
 
     h2 {
-        color: #8d8d8d;
-        margin-top: 20px;
+        color: var(--myDarkGrey);
+        margin-top: 1.5rem;
         font-weight: 400;
-        font-size: 11px;
         font-family: sans-serif;
-        letter-spacing: 3px;
+        letter-spacing: 8px;
         animation: fadeIn 1s 1.8s backwards;
     }
 
     .flat-button {
-        color: #0DA91D;
+        color: var(--myGreen);
         font-size: 13px;
         font-weight: 400;
         letter-spacing: 4px;
         font-family: sans-serif;
         text-decoration: none;
         padding: 10px 18px;
-        border: 1px solid #0DA91D;
+        border: 1px solid var(--myGreen);
         margin-top: 25px;
         float: left;
         animation: fadeInAnimation 1s 1.8s backwards;
         white-space: nowrap;
+        border-radius: 8px;
 
         &:hover {
-            background: #0DA91D;
-            color: #333;
+            background: var(--myGreen);
+            color: var(--myWhite);
+            border-radius: 8px;
+            font-weight: bold;
         }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page img {
+        display: none;
     }
 }
