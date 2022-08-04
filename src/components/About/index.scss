@@ -1,3 +1,4 @@
+// Cube Animation
 .stage-cube-cont {
     width: 50%;
     height: 100%;
@@ -34,32 +35,32 @@
 
     .face1 {
         transform: translateZ(100px);
-        color: #0DA91D;
+       
     }
 
     .face2 {
         transform: rotateY(90deg) translateZ(100px);
-        color: #0DA91D;
+        
     }
 
     .face3 {
         transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
-        color: #0DA91D;
+        
     }
 
     .face4 {
         transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
-        color: #0DA91D;
+       
     }
 
     .face5 {
         transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
-        color: #0DA91D;
+       
     }
 
     .face6 {
         transform: rotateX(-90deg) translateZ(100px);
-        color: #0DA91D;
+       
     }
 }
 

@@ -62,11 +62,13 @@ const Contact = () => {
               idx={15}
             />
           </h1>
+          <p>Like what you see? </p>
           <p>
             I am interested in freelance opportunities - especially ambitious or
             large projects. However, if you have other request or question,
             don't hesitate to contact me using below form either.
           </p>
+          <p>Looking forwart to meet up your message!</p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
               <ul>
@@ -118,7 +120,7 @@ const Contact = () => {
           <MapContainer center={position} zoom={13} scrollWheelZoom={false}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <Marker position={position}>
-              <Popup>Augusto lives here. Come over for a glass of kvass and some delicious fish! :)</Popup>
+              <Popup className='popup'>Augusto lives here. Come over for a glass of kvass and some delicious fish! :)</Popup>
             </Marker>
           </MapContainer>
         </div>

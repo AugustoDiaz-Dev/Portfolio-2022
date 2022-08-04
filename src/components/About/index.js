@@ -37,6 +37,9 @@ const About = () => {
                             idx={15}
                         />
                     </h1>
+                    {/* <p>
+                        My name is Augusto. I was born in Argentina, lived in China from 2015 to 2020 and living in eastern Russia at this very moment.
+                    </p> */}
                     <p>
                         I'm very ambitious Full Stack Developer looking for a role in
                         established IT company with the opportunity to work with the latest
@@ -48,7 +51,7 @@ const About = () => {
                     </p>
                     <p>
                         I define myself as a family person, father of a beautiful daughter, a music fanatic,
-                        photography enthusiast, and tech-obsessed!!!
+                        photography enthusiast, and tech-obsessed!
                     </p>
                 </div>
 

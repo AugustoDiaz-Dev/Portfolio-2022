@@ -36,10 +36,10 @@
   input[type='email'] {
     width: 100%;
     border: 0;
-    background: #115173;
+    background: var(--myDarkBlue);
     height: 50px;
     font-size: 16px;
-    color: #fff;
+    color: var(--myWhite);
     padding: 0 20px;
     box-sizing: border-box;
   }
@@ -47,22 +47,22 @@
   textarea {
     width: 100%;
     border: 0;
-    background: #115173;
+    background: var(--myDarkBlue);
     height: 50px;
     font-size: 16px;
-    color: #fff;
+    color: var(--myWhite);
     padding: 20px;
     box-sizing: border-box;
     min-height: 150px;
   }
 
   .flat-button {
-    color: #0DA91D;
+    color: var(--myGreen);
     font-size: 11px;
     letter-spacing: 3px;
     text-decoration: none;
     padding: 8px 10px;
-    border: 1px solid #0DA91D;
+    border: 1px solid var(--myGreen);
     float: left;
     border-radius: 4px;
     background: 0 0;
@@ -92,25 +92,28 @@
 
 .info-map {
   position: absolute;
-  background: #000;
-  top: 50px;
-  right: 30%;
+  top: 20%;
+  right: 40%;
   z-index: 999999;
-  width: 267px;
+  width: 200px;
   padding: 20px;
-  color: #fff;
+  color: var(--myDarkBlue);
   font-family: 'Helvetica';
   font-size: 17px;
-  font-weight: 300;
-  opacity: 0;
+  font-weight: 400;
+  opacity: 0.5;
   animation: fadeIn 1s 1.5s;
   animation-fill-mode: forwards;
+  border-radius: .5rem;
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+  backdrop-filter: blur(14px);
+  background-color: rgba(255, 255, 255, 0.2);
 
   span {
     font-size: 16px;
 
     span {
-      color: #0DA91D;
+      color: var(--myGreen);
     }
   }
 }
